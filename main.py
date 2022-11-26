@@ -17,18 +17,25 @@ print(
 )
 print(art.vs)
 print(
-    f"\n\nCompare A: {second['name']}, a {second['description']}, from {second['country']}.\n\n"
+    f"\n\nCompare B: {second['name']}, a {second['description']}, from {second['country']}.\n\n"
 )
 
 result = "b"
 
 if first["follower_count"] > second["follower_count"]:
     result = "a"
+    first = first
+else:
+    first = second
 
 score = 0
 choice = input("Who has more followers? Type 'A' or 'B':").lower()
 if choice == result:
-    print(f"\nYou are correct. Your score is {score}\n")
     score += 1
+    print(f"\nYou are correct. Your score is {score}\n")
+    
 else:
     print(f"\n Sorry, you are wrong!. Your final score is {score}\n")
+
+print(first)
+print(second)
