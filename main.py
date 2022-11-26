@@ -20,13 +20,13 @@ while is_correct:
   print(
       f"\n\nCompare A: {first['name']}, a {first['description']}, from {first['country']}.\n\n"
   )
-  print(f"\nTest code: {first['follower_count']}\n")
+  #print(f"\nTest code: {first['follower_count']}\n")
   
   print(art.vs)
   print(
       f"\n\nCompare B: {second['name']}, a {second['description']}, from {second['country']}.\n\n"
   )
-  print(f"\nTest code: {second['follower_count']}\n")
+  #print(f"\nTest code: {second['follower_count']}\n")
   
   
   result = "b"
